@@ -12,11 +12,6 @@
 		<meta name="description" content="Braai Consulting Services." />
 		<meta name="keywords" content="" />
 		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/jquery.dropotron.min.js"></script>
-		<script src="js/skel.min.js"></script>
-		<script src="js/skel-layers.min.js"></script>
-		<script src="js/init.js"></script>
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -33,30 +28,11 @@
 				<h1 id="logo"><a href="index.html">BRAAI <span>Consulting</span></a></h1>
 				<nav id="nav">
 					<ul>
-						<li><a href="#mission" class="scrolly">Mission & Vision</a></li>
-						<li><a href="#services" class="scrolly">Services</a></li>
-						<li><a href="#team" class="scrolly">Our Team</a></li>
+						<li><a href="index.html#mission" class="scrolly">Mission & Vision</a></li>
+						<li><a href="index.html#services" class="scrolly">Services</a></li>
+						<li><a href="index.html#clients" class="scrolly">Clients</a></li>
+						<li><a href="index.html#team" class="scrolly">Our Team</a></li>
 						<li><a href="contact.html">Contact Us</a></li>
-						<!-- <li class="submenu">
-							<a href="">Layouts</a>
-							<ul>
-								<li><a href="left-sidebar.html">Left Sidebar</a></li>
-								<li><a href="right-sidebar.html">Right Sidebar</a></li>
-								<li><a href="no-sidebar.html">No Sidebar</a></li>
-								<li><a href="contact.html">Contact</a></li>
-								<li class="submenu">
-									<a href="">Submenu</a>
-									<ul>
-										<li><a href="#">Dolore Sed</a></li>
-										<li><a href="#">Consequat</a></li>
-										<li><a href="#">Lorem Magna</a></li>
-										<li><a href="#">Sed Magna</a></li>
-										<li><a href="#">Ipsum Nisl</a></li>
-									</ul>
-								</li>
-							</ul>
-						</li> -->
-						<!-- <li><a href="#" class="button special">Sign Up</a></li> -->
 					</ul>
 				</nav>
 			</header>
@@ -75,30 +51,28 @@
 					
 						<!-- Content -->
 							<div class="content">
-								<form>
+								<form id='mail-form'>
 									<div class="row half no-collapse-1">
 										<div class="6u">
-											<input type="text" name="name" placeholder="Name" />
+											<input type="text" name="name" placeholder="Name" data-type="input-textbox" required/>
 										</div>
 										<div class="6u">
-											<input type="text" name="email" placeholder="Email" />
+											<input type="email" name="email" placeholder="Email" data-type="input-email" required/>
 										</div>
 									</div>
 									<div class="row half">
 										<div class="12u">
-											<input type="text" name="subject" placeholder="Subject" />
+											<input type="text" name="subject" placeholder="Subject" data-type="input-textbox" required/>
 										</div>
 									</div>
 									<div class="row half">
 										<div class="12u">
-											<textarea name="message" placeholder="Message" rows="7"></textarea>
+											<textarea name="message" placeholder="Message" rows="7"data-type="input-textbox" required></textarea>
 										</div>
 									</div>
 									<div class="row">
 										<div class="12u">
-											<ul class="buttons">
-												<li><a href="#" class="button special">Send Message</a></li>
-											</ul>
+												<input type='submit' class="button special" value='Send Message'/>
 										</div>
 									</div>
 								</form>
@@ -123,5 +97,10 @@
 			
 			</footer>
 
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
 	</body>
 </html>
