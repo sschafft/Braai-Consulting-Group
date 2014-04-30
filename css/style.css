@@ -1031,3 +1031,11 @@
 			display: inline-block;
 			width: 5em;
 		}
+
+		.circle {
+			width: 250px;
+			height: 250px;
+			border-radius: 50%;
+			-moz-border-radius: 50%;
+			-webkit-border-radius: 50%;
+		}
