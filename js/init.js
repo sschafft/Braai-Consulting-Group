@@ -1,16 +1,22 @@
 
 // MAIL
-	$('#mail-form').submit(function(){
-		$.ajax({
-		  dataType: 'jsonp',
-		  url: "http://getsimpleform.com/messages/ajax?form_api_token=5fede76a7da2f5a60f792e832d817e97",
-		  data: $('#mail-form').serialize()
-		}).done(function() {
-		  //callback which can be used to show a thank you message
-		  //and reset the form
-		  alert("Thank you, for contacting us");
-		});
-	});
+	// $('#mail-form').submit(function(){
+	// 	$.ajax({
+	// 	  dataType: 'jsonp',
+	// 	  url: "http://getsimpleform.com/messages/ajax?form_api_token=5fede76a7da2f5a60f792e832d817e97",
+	// 	  data: $('#mail-form').serialize()
+	// 	}).done(function() {
+	// 	  //callback which can be used to show a thank you message
+	// 	  //and reset the form
+	// 	  alert("Thank you, for contacting us");
+	// 	});
+	// });
+
+$('.contact_us').click(function(){
+	  $zopim(function() {
+    $zopim.livechat.window.toggle();
+  });
+});
 
 
 skel.init({
